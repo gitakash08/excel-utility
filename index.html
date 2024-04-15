@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/xlsx.full.min.js" defer></script>
+    <script src="js/FileSaver.min.js" defer></script>
+    <title>Excelpedia Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="Images/images.png" alt="Excelpedia Logo">
+        <h1>Excel Crawler</h1>
+    </header>
+
+    <main>
+        <div class="file-upload" onclick="document.getElementById('fileInput').click()">
+            <p>Click <button>here</button> to browse 
+                <span style="font-size: x-large; font-weight: 600; font-family: cursive;">OR</span>
+                drag and drop an Excel
+                file</p>
+            <div id="fileNameDisplay"></div>
+        </div>
+        <input type="file" id="fileInput" onchange="handleFile()" accept=".xls, .xlsx">
+        <!-- <button id="processButton" onclick="processingFun()">Process Data</button> -->
+        <button id="saveButton" onclick="saveFile()"> Save File </button>
+    </main>
+
+    <footer style="height: 13vh; background: #333; position:absolute;bottom: 0;width: 100%;">
+        <p style="padding-top: 2%; padding-left: 24%; font-size: large; color: #ffff; ">&copy; 2023 ML INFOMAP. All rights reserved. For More visit: 
+            <a href="https://github.com/gitakash08" style="text-decoration: none; color: greenyellow; font-weight: 700; "> Akashtripathi.info</a></p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

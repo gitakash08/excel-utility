@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#logo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+#fileInput {
+    display: none;
+}
+
+.file-upload {
+    border: 2px dashed #ccc;
+    padding: 78px;
+    cursor: pointer;
+}
+
+#processButton, #saveButton {
+    padding: 10px;
+    margin: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#processButton:hover, #saveButton:hover {
+    background-color: #45a049;
+}
